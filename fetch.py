@@ -2,8 +2,9 @@
 from binance.client import Client
 import math
 
-client = Client('YCMCERkmFNSSIK2pF4MaKkffsY10EYtgzpCdn5mMAybqBslTXej6gGZ4e1ORRAzO', 
-'PE03qLBcdlFlqGTXucbZpS4qcODYePN9OdP0Vurp9T8n52xKEDKMJ3GQA5kBclsC')
+mykey = 'YCMCERkmFNSSIK2pF4MaKkffsY10EYtgzpCdn5mMAybqBslTXej6gGZ4e1ORRAzO'
+mysecret = 'PE03qLBcdlFlqGTXucbZpS4qcODYePN9OdP0Vurp9T8n52xKEDKMJ3GQA5kBclsC'
+client = Client(mykey, mysecret)
 
 def asset_balance():
     client.API_URL = 'https://testnet.binance.vision/api'
